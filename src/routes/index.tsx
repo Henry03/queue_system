@@ -7,6 +7,7 @@ import Login from "../pages/login"
 import NotFound from "../pages/not-found"
 import Queue from "../pages/queue"
 import QueueLayout from "../components/layout/queueLayout"
+import Laporan from "../pages/laporan";
 
 export const router = createBrowserRouter([
     {
@@ -40,5 +41,9 @@ export const router = createBrowserRouter([
     {
         path: "*",
         element: <NotFound />,
+    },
+    {
+        path: "/laporan",
+        element: <Laporan />,
     },
 ])
